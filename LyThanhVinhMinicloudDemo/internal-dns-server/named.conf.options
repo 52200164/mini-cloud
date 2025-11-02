@@ -1,0 +1,1 @@
+﻿options { directory "/var/cache/bind"; allow-query { any; }; recursion yes; };
