@@ -1,0 +1,127 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>MyMiniCloud –  & Blog cá nhân</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <style>
+    body { background: #f3f4f6; }
+    .hero {
+      background: radial-gradient(circle at top left, #0ea5e9 0, #6366f1 40%, #1e293b 100%);
+      color: #fff;
+      border-radius: 1.25rem;
+      padding: 3rem 2rem;
+      margin-top: 2rem;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .25rem .75rem;
+      border-radius: 999px;
+      background: rgba(15,23,42,.45);
+      font-size: .8rem;
+    }
+    .hero-title { font-weight: 700; }
+    .hero-sub { max-width: 700px; margin-top: .75rem; }
+    .card-feat {
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .card-feat:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 32px rgba(15,23,42,.18);
+    }
+    footer { margin: 2.5rem 0 1.5rem; color: #6b7280; }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/">MyMiniCloud</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/blog/">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="/students/">Students API</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="hero">
+      <span class="hero-badge">
+        <span class="badge bg-success">Cloud Lab</span>
+        <span>Mini platform + Blog + API demo</span>
+      </span>
+
+      <h1 class="display-5 hero-title mt-3">
+        MyMiniCloud – Mô phỏng nền tảng Cloud nội bộ & Blog cá nhân
+      </h1>
+
+      <p class="hero-sub lead">
+        Hệ thống gồm Web Frontend, API Backend, Database, Auth, Object Storage, DNS nội bộ,
+        Monitoring (Prometheus &amp; Grafana) và API Gateway / Reverse Proxy – đồng thời
+        là nơi mình chia sẻ bài viết về công nghệ, du lịch và phong cách sống.
+      </p>
+
+      <div class="mt-4 d-flex flex-wrap gap-2">
+        <a href="/blog/" class="btn btn-light btn-lg">Đọc blog</a>
+        <a href="/students/" class="btn btn-outline-light btn-lg">Xem Students (API demo)</a>
+      </div>
+    </section>
+
+    <section class="row g-4 mt-4">
+      <div class="col-md-4">
+        <div class="card h-100 card-feat">
+          <div class="card-body">
+            <h5 class="card-title">Cloud Platform mô phỏng</h5>
+            <p class="card-text text-muted">
+              Một mini cloud gồm 9 service chạy bằng Docker Compose: Web, Backend, Database,
+              Auth, Storage, DNS, Monitoring và API Gateway. Thích hợp để học kiến trúc hệ thống.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 card-feat">
+          <div class="card-body">
+            <h5 class="card-title">Blog cá nhân đa chủ đề</h5>
+            <p class="card-text text-muted">
+              Khu vực blog chia sẻ trải nghiệm về lập trình &amp; AI, mẹo du lịch tiết kiệm
+              và những thói quen nhỏ giúp nâng cấp bản thân mỗi ngày.
+            </p>
+            <a href="/blog/" class="stretched-link text-decoration-none"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 card-feat">
+          <div class="card-body">
+            <h5 class="card-title">Students API &amp; Database</h5>
+            <p class="card-text text-muted">
+              Demo backend Flask + MariaDB quản lý danh sách sinh viên. Frontend gọi API
+              qua API Gateway (<code>/api/student</code>) để minh họa mô hình Web &amp; API trong cloud.
+            </p>
+            <a href="/students/" class="stretched-link text-decoration-none"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center">
+      <small>MyMiniCloud • Docker Compose • Demo môn Điện toán đám mây & Blog cá nhân</small>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

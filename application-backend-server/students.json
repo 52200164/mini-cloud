@@ -1,0 +1,5 @@
+[
+  {"id":1, "name":"Nguyen Van A", "major":"CNTT", "gpa":3.1},
+  {"id":2, "name":"Tran Thi B", "major":"CNTT", "gpa":3.4},
+  {"id":3, "name":"Le Van C", "major":"Kinh Te", "gpa":3.7}
+]

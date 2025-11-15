@@ -1,0 +1,15 @@
+$TTL 1H
+@   IN SOA ns.cloud.local. admin.cloud.local. (
+        2       ; Serial          ; nh? t?ng s? serial khi s?a file
+        1H      ; Refresh
+        15M     ; Retry
+        1W      ; Expire
+        1H      ; Negative Cache TTL
+)
+    IN NS   ns.cloud.local.
+
+ns                      IN A 127.0.0.1
+web-frontend-server     IN A 10.10.10.10
+app-backend             IN A 10.10.10.20
+minio                   IN A 10.10.10.30
+keycloak                IN A 10.10.10.40

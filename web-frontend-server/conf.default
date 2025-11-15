@@ -1,0 +1,43 @@
+server {
+    listen 80;
+    server_name _;
+
+    # Static root
+    root /usr/share/nginx/html;
+    index index.html;
+
+    # Trang home & file tÄ©nh
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    # /blog/ -> thÆ° má»¥c blog
+    location ^~ /blog/ {
+        alias /usr/share/nginx/html/blog/;
+        index index.html;
+        autoindex off;
+    }
+
+    # /students/ -> thÆ° má»¥c students
+    location ^~ /students/ {
+        alias /usr/share/nginx/html/students/;
+        index index.html;
+        autoindex off;
+    }
+
+    # /api/ -> forward sang API Gateway (cá»•ng 80 trong docker network)
+    location /api/ {
+        proxy_pass http://api-gateway-proxy-server/api/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    # /metrics -> endpoint cho Prometheus
+    location /metrics {
+        default_type text/plain;
+
+        return 200 "web_up 1\n";
+    }
+}

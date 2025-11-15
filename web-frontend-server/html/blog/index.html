@@ -1,0 +1,140 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Blog – MyMiniCloud</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body { background:#f3f4f6; }
+    .hero {
+      background: radial-gradient(circle at top left,#0ea5e9 0,#6366f1 40%,#1e293b 100%);
+      color:#fff;
+      border-radius:1.25rem;
+      padding:2.5rem 2rem;
+      margin-top:1.5rem;
+    }
+    .hero-badge {
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      padding:.25rem .75rem;
+      border-radius:999px;
+      background:rgba(15,23,42,.45);
+      font-size:.8rem;
+    }
+    .post-card {
+      transition:.18s ease;
+      border-radius:1rem;
+      overflow:hidden;
+    }
+    .post-card:hover {
+      transform: translateY(-6px);
+      box-shadow:0 16px 36px rgba(15,23,42,.16);
+    }
+    .post-tag {
+      font-size:.75rem;
+      padding:.15rem .6rem;
+      border-radius:999px;
+    }
+    a.post-link { text-decoration:none; color:inherit; display:block; height:100%; }
+    a.post-link:hover h4 { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="/">MyMiniCloud</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="/blog/">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="/students/">Students API</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <span class="hero-badge">
+        <span class="badge bg-success">MiniCloud Blog</span>
+        <span>Chia sẻ về công nghệ, du lịch &amp; lifestyle</span>
+      </span>
+      <h1 class="h3 mt-3 mb-2">Góc ghi chép nhỏ trong hệ thống MyMiniCloud</h1>
+      <p class="mb-0 lead">
+        Ba bài viết mở đầu cho blog: một chút suy nghĩ về AI và lập trình,
+        vài mẹo săn vé rẻ khi đi du lịch, và những thói quen nhỏ giúp sống tốt hơn mỗi ngày.
+      </p>
+    </section>
+
+    <!-- Posts list -->
+    <section class="mt-4">
+      <div class="row g-3">
+
+        <!-- Bài 1: Công nghệ / AI -->
+        <div class="col-md-4">
+          <article class="card h-100 post-card">
+            <a href="/blog/blog1.html" class="post-link">
+              <div class="card-body">
+                <span class="post-tag bg-primary text-white">Công nghệ</span>
+                <h4 class="mt-2 mb-1 h5">AI ảnh hưởng thế nào đến tương lai lập trình?</h4>
+                <p class="text-muted mb-2">
+                  Trí tuệ nhân tạo đang thay đổi cách lập trình viên học, viết code
+                  và xây dựng sản phẩm phần mềm như thế nào?
+                </p>
+                <small class="text-secondary">01 Tháng 12, 2025</small>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <!-- Bài 2: Du lịch -->
+        <div class="col-md-4">
+          <article class="card h-100 post-card">
+            <a href="/blog/blog2.html" class="post-link">
+              <div class="card-body">
+                <span class="post-tag bg-warning text-dark">Du lịch</span>
+                <h4 class="mt-2 mb-1 h5">Mẹo săn vé rẻ dưới 1 triệu</h4>
+                <p class="text-muted mb-2">
+                  Một vài kinh nghiệm thực chiến giúp bạn bay khắp Việt Nam
+                  với chi phí dễ chịu hơn tưởng tượng.
+                </p>
+                <small class="text-secondary">02 Tháng 12, 2025</small>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <!-- Bài 3: Lifestyle -->
+        <div class="col-md-4">
+          <article class="card h-100 post-card">
+            <a href="/blog/blog3.html" class="post-link">
+              <div class="card-body">
+                <span class="post-tag bg-success text-white">Lifestyle</span>
+                <h4 class="mt-2 mb-1 h5">5 thói quen thay đổi cuộc đời bạn</h4>
+                <p class="text-muted mb-2">
+                  Những thói quen nhỏ nhưng nếu duy trì đều đặn
+                  sẽ tạo ra khác biệt lớn trong học tập, công việc và sức khỏe.
+                </p>
+                <small class="text-secondary">03 Tháng 12, 2025</small>
+              </div>
+            </a>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="mt-5 text-center">
+      <small class="text-muted">© MyMiniCloud 2025 – Blog cá nhân demo trong hệ thống cloud mini</small>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

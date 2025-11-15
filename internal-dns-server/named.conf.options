@@ -1,0 +1,8 @@
+options {
+    directory "/var/cache/bind";
+
+    // Cho ph?p c?c container kh?c trong lab query DNS
+    allow-query { any; };
+
+    recursion yes;
+};

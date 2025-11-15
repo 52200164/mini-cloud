@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>AI ảnh hưởng thế nào đến tương lai lập trình?</title>
+  <meta name="description"
+        content="Góc nhìn cá nhân về việc AI đang thay đổi cách lập trình viên học, viết code và chuẩn bị cho tương lai nghề nghiệp.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body { background:#f3f4f6; }
+    .hero {
+      background: linear-gradient(135deg,#0ea5e9,#6366f1);
+      color:#fff;
+      border-radius:1rem;
+      padding:2.5rem 2rem;
+      margin-top:1.5rem;
+    }
+    .hero-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:.5rem;
+      padding:.25rem .75rem;
+      border-radius:999px;
+      background:rgba(15,23,42,.4);
+      font-size:.8rem;
+    }
+    .meta {
+      font-size:.85rem;
+      opacity:.9;
+    }
+    .section-card{
+      background:#fff;
+      border-radius:1rem;
+      padding:1.75rem 1.9rem;
+      margin-top:1.5rem;
+      box-shadow:0 10px 28px rgba(15,23,42,.08);
+    }
+    .cover-img{
+      border-radius:1rem;
+      max-height:320px;
+      object-fit:cover;
+      width:100%;
+      margin-top:1.25rem;
+    }
+    .quote-box{
+      border-left:4px solid #6366f1;
+      padding-left:1rem;
+      font-style:italic;
+      color:#4b5563;
+      margin:1rem 0;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="/">MyMiniCloud</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="/blog/">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="/students/">Students</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <!-- HERO -->
+  <section class="hero">
+    <span class="hero-badge">
+      <span class="badge bg-light text-dark">Blog 1</span>
+      <span>Công nghệ · AI &amp; Coding</span>
+    </span>
+    <h1 class="h2 mt-3 mb-2">AI ảnh hưởng thế nào đến tương lai lập trình?</h1>
+    <p class="mb-2">
+      Từ chỗ chỉ là “auto-complete nâng cao”, AI đang dần trở thành trợ lý cá nhân của lập trình viên:
+      gợi ý code, review, tạo test case và thậm chí hỗ trợ thiết kế kiến trúc hệ thống.
+    </p>
+    <p class="meta mb-0">
+      Đăng ngày 01/12/2025 · Thời gian đọc ~5 phút
+    </p>
+    <img src="https://picsum.photos/seed/ai-code/1200/400" alt="AI & Coding" class="cover-img"/>
+  </section>
+
+  <!-- SECTION 1 -->
+  <section class="section-card">
+    <h2 class="h4">1. AI giúp lập trình viên viết code nhanh hơn</h2>
+    <p>
+      Trước đây, để triển khai một tính năng, lập trình viên phải tự tìm thư viện, đọc tài liệu,
+      tra Google, Stack Overflow… Mỗi bước đều tốn khá nhiều thời gian, đặc biệt khi phải thử sai
+      nhiều lần để tìm được cách làm phù hợp.
+    </p>
+    <p>
+      Ngày nay, những việc này được rút ngắn nhờ các công cụ AI có thể gợi ý đoạn mã hoàn chỉnh
+      dựa trên context hiện tại của file. Bạn mô tả yêu cầu bằng vài câu, AI đề xuất khung code,
+      sau đó bạn chỉnh sửa lại cho đúng với kiến trúc và coding style của dự án.
+    </p>
+    <div class="quote-box">
+      “AI không thay bạn viết cả dự án, nhưng có thể giúp bạn đi từ trang giấy trắng tới bản nháp
+      đầu tiên nhanh hơn rất nhiều.”
+    </div>
+    <p>
+      Điều này đặc biệt hữu ích với sinh viên: bớt “mệt” ở phần gõ tay và xử lý các đoạn code lặp,
+      để tập trung nhiều hơn vào việc hiểu bản chất bài toán và lý do tại sao giải pháp đó lại hoạt động.
+    </p>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="section-card">
+    <h2 class="h4">2. Những kỹ năng vẫn luôn “bất biến”</h2>
+    <p>
+      Dù AI có thông minh đến đâu, một số kỹ năng lõi của lập trình viên vẫn rất khó bị thay thế:
+    </p>
+    <ul>
+      <li>
+        <strong>Tư duy giải quyết vấn đề:</strong> phân tích yêu cầu, chia nhỏ bài toán,
+        chọn cấu trúc dữ liệu và thuật toán phù hợp. AI có thể gợi ý code, nhưng bạn phải quyết định
+        hướng tiếp cận.
+      </li>
+      <li>
+        <strong>Kiến trúc hệ thống:</strong> hiểu cách các thành phần giao tiếp, phân tách microservice,
+        xử lý scaling, bảo mật, logging, monitoring. Đây là phần “bức tranh lớn” mà AI hiện tại mới chỉ hỗ trợ,
+        chưa thể chịu trách nhiệm hoàn toàn.
+      </li>
+      <li>
+        <strong>Kỹ năng đọc – hiểu và review code:</strong> AI viết code được, nhưng khi hệ thống gặp bug
+        hoặc cần mở rộng, con người vẫn là người đọc, hiểu và chỉnh sửa cuối cùng.
+      </li>
+    </ul>
+    <p>
+      Nói cách khác: AI làm tốt phần “thực thi nhanh”, còn con người vẫn giữ vai trò “định hướng đúng”.
+    </p>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="section-card mb-4">
+    <h2 class="h4">3. Lập trình viên nên chuẩn bị gì cho tương lai?</h2>
+    <ol>
+      <li>
+        <strong>Xem AI là công cụ, không phải đối thủ.</strong>
+        Càng sớm học cách dùng AI vào workflow hằng ngày, bạn càng có lợi thế so với người
+        chỉ đứng ngoài quan sát.
+      </li>
+      <li>
+        <strong>Đầu tư vào nền tảng kiến thức:</strong>
+        thuật toán, hệ điều hành, mạng máy tính, cơ sở dữ liệu… Những mảng này giúp bạn đánh giá
+        gợi ý của AI là hợp lý hay nguy hiểm.
+      </li>
+      <li>
+        <strong>Luyện kỹ năng mô tả vấn đề (prompting):</strong>
+        nếu biết đặt câu hỏi rõ ràng, chi tiết, bạn sẽ nhận lại gợi ý chất lượng hơn rất nhiều
+        so với việc chat mơ hồ.
+      </li>
+    </ol>
+    <p class="mb-3">
+      Tương lai, lập trình viên không biến mất – nhưng mô tả công việc sẽ khác đi:
+      ít gõ code hơn, nhiều ra quyết định, review và thiết kế hệ thống hơn. Người biết tận dụng AI
+      sẽ là người được tăng “sức mạnh”, chứ không bị thay thế.
+    </p>
+    <a href="/blog/" class="btn btn-outline-secondary">&larr; Quay lại danh sách bài viết</a>
+  </section>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
